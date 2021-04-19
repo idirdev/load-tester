@@ -1,0 +1,30 @@
+{
+  "name": "load-tester",
+  "version": "1.0.0",
+  "description": "HTTP load testing tool with detailed metrics and reporting",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "loadtest": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.0"
+  },
+  "keywords": ["load-testing", "http", "benchmark", "performance", "cli"],
+  "license": "MIT"
+}
