@@ -12,7 +12,7 @@
     "dev": "tsc --watch",
     "start": "node dist/index.js",
     "lint": "eslint src/",
-    "test": "jest"
+    "test": "vitest run"
   },
   "dependencies": {
     "chalk": "^5.3.0",
@@ -23,7 +23,8 @@
     "typescript": "^5.4.0",
     "eslint": "^8.57.0",
     "jest": "^29.7.0",
-    "@types/jest": "^29.5.0"
+    "@types/jest": "^29.5.0",
+    "vitest": "^2.0.0"
   },
   "keywords": ["load-testing", "http", "benchmark", "performance", "cli"],
   "license": "MIT"
