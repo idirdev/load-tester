@@ -150,3 +150,30 @@ const scenario = defineScenario("User Flow", [
 ## License
 
 MIT
+
+---
+
+## Français
+
+**load-tester** est un outil de test de charge HTTP rapide et léger avec métriques détaillées, analyse par percentiles et plusieurs formats de rapport. Il supporte les connexions concurrentes, la montée en charge progressive (ramp-up), la limitation de débit, et génère des rapports en terminal, JSON ou HTML avec distribution des temps de réponse et statistiques p50/p95/p99.
+
+### Installation
+
+```bash
+npm install
+npm run build
+```
+
+### Utilisation
+
+```bash
+# Test de charge basique
+loadtest run https://example.com
+
+# Test personnalisé avec 50 connexions pendant 60 secondes
+loadtest run https://api.example.com/users \
+  --concurrent 50 \
+  --duration 60 \
+  --report html \
+  --output ./rapports/resultats.html
+```
